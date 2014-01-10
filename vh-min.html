@@ -12,7 +12,7 @@
       height: 100%;
     }
     .box {
-      width: 40%;
+      width: 400px;
       background: rgb(237,66,10);
       display: inline-block;
       text-align: center;
@@ -21,18 +21,28 @@
       margin-left: 5px;
     }
     .label {
-      width: 40%;
-      text-align: center;
+      width: 400px;
       display: inline-block;
     }
     .vh {
       height: 100vh;
     }
+    .box > div {
+      height: 200px;
+      width: 100px;
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-<div class="box" data-vhmin="true">vh-min</div>
-<div class="vh box">vh</div>
+<div class="box" data-vhmin="true">
+  <div>vh-min</div>
+</div>
+<div class="vh box">
+  <div>vh</div>
+</div>
 <script src="https://rawgithub.com/jeffshaver/vh-min.js/master/vh-min.js"></script>
 <script>
   vhmin.init();
