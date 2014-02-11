@@ -1,8 +1,8 @@
-require(['https://rawgithub.com/jeffshaver/brief.js/master/src/brief.js'], function(b) {
+require(['../brief.js/src/brief.js'], function(b) {
   var resultBox = b('#resultBox').get(0);
     var listener1 = function(event) {
       event.preventDefault();
-      resultBox.innerHTML = 'this event was triggered by clicking an anchor tag, but the listener is actually on the body which is delegating it to the anchor tag.<br>' + resultBox.innerHTML;
+      resultBox.innerHTML = 'this event was triggered by hovering or leaving an anchor tag, but the listener is actually on the body which is delegating it to the anchor tag.<br>' + resultBox.innerHTML;
     };
     var listener2 = function(event) {
       event.preventDefault();
@@ -13,7 +13,7 @@ require(['https://rawgithub.com/jeffshaver/brief.js/master/src/brief.js'], funct
       resultBox.innerHTML = 'this event was triggered by clicking on an element with the .test class.<br>' + resultBox.innerHTML;
     };
     var listener4 = function(event) {
-      resultBox.innerHTML = event.type + '<br>' + resultBox.innerHTML;
+      resultBox.innerHTML = event.type + ' on the body<br>' + resultBox.innerHTML;
     };
     b('body').on('mouseenter mouseleave', listener1, 'a');
     b('#test').on('click', listener2);
