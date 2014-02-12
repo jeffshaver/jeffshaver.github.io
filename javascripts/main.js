@@ -1,4 +1,4 @@
-require(['../brief.js/src/brief.js'], function(b) {
+require(['https://rawgithub.com/jeffshaver/brief.js/master/src/brief.min.js'], function(b) {
   var resultBox = b('#resultBox').get(0);
     var listener1 = function(event) {
       event.preventDefault();
