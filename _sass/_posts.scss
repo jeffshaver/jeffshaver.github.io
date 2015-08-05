@@ -8,6 +8,12 @@
   margin-bottom: 4em;
 }
 
+.archive-post {
+  border-top: 1px solid lighten(#515151, 50%);
+  padding: 25px 0;
+  margin: 0;
+}
+
 // Blog post or page title
 .page-title,
 .post-title,
@@ -17,6 +23,10 @@
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+.post-tldr {
+  color: lighten(#515151, 30%);
 }
 
 // Meta data line below post title

@@ -3,8 +3,11 @@ layout: page
 title: Archive
 ---
 
-## Blog Posts
-
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  {::options parse_block_html="true" /}
+<div class="archive-post">
+  {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+
+  <p class="post-tldr">{{post.tldr}}</p>
+</div>
 {% endfor %}

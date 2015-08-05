@@ -26,6 +26,7 @@ html {
 
 body {
   color: #515151;
+  font-weight: 200;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -35,13 +36,13 @@ body {
 a {
   color: #268bd2;
   text-decoration: none;
-
+  /*
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
     text-decoration: underline;
   }
-
+*/
   strong {
     color: inherit;
   }
