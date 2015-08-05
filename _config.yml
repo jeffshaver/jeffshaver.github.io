@@ -5,9 +5,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               jeffshaver.me
+#tagline:             The Jekyll Butler
+url:                 http://blog.jeffshaver.me
 paginate:            1
 baseurl:             ""
 
@@ -20,11 +20,17 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Jeffrey Sgaver
+  url:               https://twitter.com/jeffshaver_
+  email:             jeff.e.shaver@gmail.com
 
 # Custom vars
-version:             2.0.0
+version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/jeffshaver/jeffshaver.github.io
+
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml',
+  Website: 'jeffshaver.me'
