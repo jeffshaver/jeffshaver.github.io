@@ -6,15 +6,13 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="archive-post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h1 class="post-title">{{ post.title }}</h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    <p class="post-tldr">{{ post.tldr }}</p>
+      <p class="post-tldr">{{ post.tldr }}</p>
+    </a>
   </article>
   {% endfor %}
 </div>
