@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               jeffshaver.me
 #tagline:             The Jekyll Butler
 url:                 http://blog.jeffshaver.me
-paginate:            10
+paginate:            1
 baseurl:             ""
 
 # Assets
