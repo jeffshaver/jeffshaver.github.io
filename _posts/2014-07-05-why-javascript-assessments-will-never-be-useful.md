@@ -3,6 +3,7 @@ layout: post
 title: Why JavaScript assessments will never be helpful
 permalink: why-js-assessments-will-never-be-useful
 tldr: JavaScript assessments and why they suck...
+comments: true
 ---
 
 A friend of mine, who is just finishing up college, said that he feels like he has to memorize things about programming languages because he thinks he would look stupid if he has to Google something while at work.

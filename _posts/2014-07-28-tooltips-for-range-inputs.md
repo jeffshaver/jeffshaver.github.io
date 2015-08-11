@@ -3,6 +3,7 @@ layout: post
 title: Tooltips for range inputs
 permalink: tooltips-for-range-inputs
 tldr: Range input tooltips ftw
+comments: true
 ---
 
 A few days ago I wrote a color conversion codepen:

@@ -7,11 +7,9 @@ title: Home
   {% for post in paginator.posts %}
   <article class="archive-post">
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <h1 class="post-title">{{ post.title }}</h1>
-
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
+      <h1 class="post-title">{{ post.title }} <span class="post-comment-count"><span class="disqus-comment-count" data-disqus-identifier="{{post.permalink}}"></span><i class="fa fa-comment"></i></span></h1>
       <p class="post-tldr">{{ post.tldr }}</p>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">Published {{ post.date | date: '%B %d, %Y' }}</time>
     </a>
   </article>
   {% endfor %}
@@ -29,3 +27,17 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'jeffshaver'; // required: replace example with your forum shortname
+  // var disqus_developer = 1; // Comment out when the site is live
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>

@@ -28,7 +28,7 @@
 }
 
 .archive-post .post-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 // Blog post or page title
@@ -48,16 +48,28 @@
   margin-top: 0;
 }
 
-.post-tldr {
+.post-title .post-comment-count {
+  font-size: 1rem;
+  font-weight: 200;
+  color: lighten(#444343, 40%);
+}
+
+.post-title .post-comment-count, .post-title .post-comment-count span {
+  vertical-align: middle;
+}
+
+.archive-post .post-tldr {
   color: lighten(#444343, 30%);
-  margin: 0;
+}
+
+.archive-post .post-date {
+  font-size: .9rem;
 }
 
 // Meta data line below post title
 .post-date {
   display: block;
   margin-top: -.5rem;
-  margin-bottom: 1rem;
   color: #9a9a9a;
 }
 
