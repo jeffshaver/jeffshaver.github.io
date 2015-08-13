@@ -68,8 +68,13 @@
 
 // Meta data line below post title
 .post-date {
-  display: block;
+  display: inline-block;
   margin-top: -.5rem;
+  color: #9a9a9a;
+}
+
+.post-read-time {
+  display: inline-block;
   color: #9a9a9a;
 }
 

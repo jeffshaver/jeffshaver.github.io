@@ -2,9 +2,22 @@
 layout: default
 ---
 
+<!-- Time to read calculation -->
+{% assign time_in_decimal = page.content | strip_html | number_of_words | append: '.0' | divided_by: 180 %}
+
+{% assign minutes = time_in_decimal | append: '' | split: '.' | first | plus: 0 %}
+
+{% assign seconds = time_in_decimal | minus: minutes %}
+
+{% if seconds >= 0.5 %}
+  {% assign minutes = minutes | plus: 1 %}
+{% endif %}
+
+<!-- Start real template -->
+
 <article class="post">
   <h1 class="post-title">{{ page.title }} <a class="post-comment-count" href="#disqus_comments"><span class="disqus-comment-count" data-disqus-identifier="{{page.permalink}}"></span><i class="fa fa-comment"></i></a></h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
+  <small><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %d, %Y' }}</time> &middot; <span class="post-read-time">Reading Time:  ~{{minutes}} min</span></small>
   {{ content }}
 </article>
 
