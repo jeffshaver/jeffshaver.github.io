@@ -58,6 +58,14 @@
   vertical-align: middle;
 }
 
+.archive-post .post-title .post-comment-count, .archive-post .post-title .post-comment-count span {
+  vertical-align: text-bottom;
+}
+
+.archive-post .post-title .fa-comment {
+  vertical-align: text-top;
+}
+
 .archive-post .post-tldr {
   color: lighten(#444343, 30%);
 }
